@@ -25,12 +25,17 @@ openModalBtn.onclick = function () {
 `;
 };
 
-closeBtn.onclick = function () {
-  modal.style.display = 'none';
-};
-
-window.onclick = function (event) {
-  if (event.target == modal) {
+function closeModal() {
     modal.style.display = 'none';
+    openModalBtn.focus();  
   }
+  
+  closeBtn.onclick = function () {
+    closeModal();
+  };
+  
+  window.onclick = function (event) {
+    if (event.target == modal) {
+      closeModal();
+    }
 };
