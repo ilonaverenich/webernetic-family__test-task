@@ -50,6 +50,7 @@ body {
   line-height: 27.2px;
 }
 .container__button {
+  cursor: pointer;
   background: #244C98;
   padding: 19.5px 104px 19.5px 24px;
   height: 68px;
@@ -61,7 +62,6 @@ body {
   border-radius: 60px;
   position: relative;
   border: none;
-  transition: all 2s easy;
 }
 .container__btn-logo {
   position: absolute;
