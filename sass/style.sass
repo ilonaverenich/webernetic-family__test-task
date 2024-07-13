@@ -1,0 +1,62 @@
+*
+    margin: 0px
+    padding: 0px
+    box-sizing: border-box
+
+html, body
+    font-size: 16px
+    font-family: 'Manrope', sans-serif
+
+body
+    width: 100vw
+    padding: 36px 40px
+
+.container
+    display: flex
+    max-width: 1840px
+    width: 100%
+    margin: 0 auto
+    background: #F0F4FC
+
+    &__text-content
+        flex: 1
+        box-sizing: border-box
+        width: 50%
+         
+    &__image-content
+        box-sizing: border-box
+        flex: 1
+        width: 50%
+        background-image: url("../img/image.png")
+        background-repeat: no-repeat
+        background-position: center
+        background-size: cover
+
+    &__subtitle
+        margin-bottom: 18px  
+        font-weight: 500
+        font-size: 26px
+        line-height: 41.6px
+        color: #1F4284
+
+    &__text 
+        font-size: 17px
+        margin-bottom: 36px
+        line-height: 27.2px
+    
+    &__button 
+        background: #244C98
+        padding: 19.5px 104px 19.5px 24px
+        height: 68px 
+        font-weight: 500
+        color: #FFFFFF
+        font-size: 18px
+        line-height: 28.8px
+        border-radius: 60px
+        position: relative
+        border: none
+
+    &__btn-logo
+        position: absolute
+        top: 12px
+        right: 12px
