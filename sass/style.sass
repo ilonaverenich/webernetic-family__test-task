@@ -1,3 +1,7 @@
+$bgColor = #F0F4FC
+$btnBlue = #244C98
+$textGrey = #727272
+$subTitleBlue = #1F4284
 *
     margin: 0px
     padding: 0px
@@ -17,13 +21,13 @@ body
     width: 100%
     height: 455px
     margin: 0 auto
-    background: #F0F4FC
+    background: $bgColor
 
     &__text-content
         box-sizing: border-box
         width: 50%
         padding: 102px 70px 102px 72px  
-        color: #727272
+        color: $textGrey
     
     &__image-content
         box-sizing: border-box
@@ -38,7 +42,7 @@ body
         font-weight: 500
         font-size: 30px
         line-height: 48px
-        color: #1F4284
+        color: $subTitleBlue
 
     &__text 
         max-width: 511px
@@ -47,7 +51,7 @@ body
         line-height: 27.2px
     
     &__button 
-        background: #244C98
+        background: $btnBlue
         padding: 19.5px 104px 19.5px 24px
         height: 68px 
         width: 341px
@@ -105,6 +109,7 @@ body
             margin-bottom: 24px
             line-height: 24px
             font-weight: 400
+            max-width: 672px
 
         &__button 
             padding: 1rem 4rem 1rem 1.125rem
@@ -119,3 +124,30 @@ body
             height: 36px
             top: 10px
             right: 10px
+@media (max-width: 767px) // 375px - 767px
+    body
+        padding: 14px 24px
+
+    .container
+        width: 327px
+        height: 482px
+
+        &__text-content
+            width: 100%
+            padding: 24px 24px 18px 24px 
+                
+        &__subtitle 
+            font-size: 17px
+            margin-bottom: 14px
+
+        &__text 
+            font-size: 13px
+            line-height: 20.8px    
+            margin-bottom: 18px         
+            
+        &__button 
+            width: 279px
+            padding: 10px 10px 10px 18px
+            height: 56px
+            text-align: left
+
